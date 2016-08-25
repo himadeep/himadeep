@@ -1,0 +1,16 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class calanderoperation {
+
+	public static void main(String[] args) 
+	{
+	WebDriver driver=new FirefoxDriver();
+	driver.get("http://cleartrip.com");
+	driver.findElement(By.id("DepartDate")).click();
+
+	}
+
+}

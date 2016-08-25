@@ -1,0 +1,21 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.server.browserlaunchers.Sleeper;
+
+
+public class gmaillaunch {
+
+	public static void main(String[] args) {
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http://gmail.com");
+		driver.close();
+		Sleeper.sleepTightInSeconds(5);
+		driver.get("http://facebook.com");
+		driver.close();
+		Sleeper.sleepTightInSeconds(5);
+		driver.get("http://apple.in");
+		driver.close();
+
+	}
+
+}

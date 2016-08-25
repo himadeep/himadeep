@@ -1,0 +1,26 @@
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class google {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http//:google.com");
+		File scr=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+		try {
+			FileUtils.copyFile(scr, new file("google") );	
+		} catch (Exception e) {
+			
+		}
+
+	}
+
+}

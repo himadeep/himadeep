@@ -1,0 +1,19 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class calanderoperation {
+
+	public static void main(String[] args) 
+	{
+	String date="18/november/2017";
+	String[] split=date.split("/");
+	WebDriver driver=new FirefoxDriver();
+	driver.get("http://cleartrip.com");
+	driver.findElement(By.id("DepartDate")).click();
+	driver.findElement(By.className("ui-datepicker-month")).click();
+
+	}
+
+}
